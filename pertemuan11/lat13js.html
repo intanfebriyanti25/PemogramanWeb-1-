@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ganti Gambar</title>
+    <script>
+        function tampilGambar(){
+            let nilaiTerpilih = document.getElementById("pilih Gambar").value;
+            let gambarpilih = document.getElementById("gambarpilih");// Corr
+
+            switch(nilaiTerpilih){
+                case "gambar1":
+                    gambarPilih.src = "img/gajah.jpg";
+                    break;
+                    case "gambar2":
+                    gambarPilih.src = "img/jerapah.jpg";
+                    break;
+                    case "gambar3":
+                    gambarPilih.src = "img/kura-kura.jpg";
+                    break;
+                    case "gambar4":
+                    gambarPilih.src = "img/singa.jpg";
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2> Ganti Gambar</h2>
+    <label for="PilihGambar">Pilih Gambar:</label>
+    <select id="PilihGambar" onchange="tampilGambar()">
+        <option value="gambar1">gajah</option>
+        <option value="gambar2">jerapah</option>
+        <option value="gambar3">kura-kura</option>
+        <option value="gambar4">singa</option>
+    </select>
+    <img src="img/gajah.jpg" id="gambarpilih" alt="kosong" width="300"> <!-- Only one image element -->
+    
+</body> 
+</html>
