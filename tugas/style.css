@@ -1,0 +1,109 @@
+*{
+    font-family: montserrat;
+}
+body{
+    background: #F08080;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.corousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+.corousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.corousel-caption h5{
+    font-size: 70px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.corousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9
+}
+.corousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light  .navbar-brand{
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.navbar-light  .navbar-brand:focus,
+.navbar-light  .navbar-brand:hover{
+    color: black;
+}
+.navbar-light  .navbar-nav .navbar-link{
+    color: black;
+}
+.w-100{
+height: 100vh;
+}
+
+.col-md-6 H3{
+    color: bisque;
+    font-size: 50px;
+}
+.col-md-6 H3 span{
+    color: black;
+    padding: 20px;
+}
+
+.col-md-6 P{
+    font-size: 30PX;
+}
+
+.col-ms-12 h3{
+    font-size: 50px;
+    color: #EEE8AA	;
+}
+
+.col-ms-12 h2{
+    font-size: 70px;
+    color: bisque;
+}
+
+.col-md-2 img{
+    width: 204px;
+}
+
+video{
+    float: center;
+    width: 1000px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+/* === responsive css === */
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .corousel-caption{
+        bottom: 125px;
+    }
+    .corousel-caption h5{
+        font-size: 17px;
+    }
+}
